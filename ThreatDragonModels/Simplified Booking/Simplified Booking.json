@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "title": "Simplified Booking",
+    "owner": "Alex Harriss",
+    "description": "Simplified Booking system"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "oskar.bergquist@skyscanner.net"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Context Diagram",
+        "thumbnail": "../public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Alex Harriss"
+  },
+  "location": {
+    "organisation": "alexharriss",
+    "repo": "threat-dragon-test",
+    "branch": "master",
+    "model": "Simplified Booking"
+  }
+}
