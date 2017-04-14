@@ -57,6 +57,16 @@
               "id": "dcd9c0ae-d2e9-4405-8ad3-88a073e7174d",
               "z": 2,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "TLS certificate is spoofed",
+                  "description": "TLS certificate is spoofed by a rogue server, meaning user believes they are connected to the Simplified Booking server but in fact are not.",
+                  "mitigation": "Mitigated with a valid, signed certificate"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -171,6 +181,14 @@
               },
               "vertices": [
                 {
+                  "x": 268,
+                  "y": 65
+                },
+                {
+                  "x": 253,
+                  "y": 58
+                },
+                {
                   "x": 241,
                   "y": 61
                 }
@@ -190,6 +208,19 @@
               ],
               "z": 6,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "Tampering with session",
+                  "description": "MITM attack on local network could allow session to be tampered with",
+                  "mitigation": "Mitigated with TLS"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
