@@ -419,6 +419,11 @@
           "height": 590,
           "width": 1369.3184814453125
         }
+      },
+      {
+        "title": "Get Partner config",
+        "thumbnail": "../public/content/images/thumbnail.jpg",
+        "id": 1
       }
     ],
     "reviewer": "Alex Harriss"
