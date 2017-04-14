@@ -56,7 +56,7 @@
               "angle": 0,
               "id": "dcd9c0ae-d2e9-4405-8ad3-88a073e7174d",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "status": "Mitigated",
@@ -65,17 +65,25 @@
                   "title": "TLS certificate is spoofed",
                   "description": "TLS certificate is spoofed by a rogue server, meaning user believes they are connected to the Simplified Booking server but in fact are not.",
                   "mitigation": "Mitigated with a valid, signed certificate"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Error messages leaking server information",
+                  "description": "Error messages might show stack traces or server information that could help an attacker.",
+                  "type": "Information disclosure",
+                  "mitigation": "Should mitigate by ensuring 'debug' is set to off in production, and exceptions are not presented to the user"
                 }
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Simplified\nBooking"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
